@@ -1,6 +1,6 @@
 <div class = "first_side_bar">
   <div class = "user_name">
-    <a href = "#">サイドバー1</a>
+    <%= link_to current_user.name, edit_user_path(current_user)%>
   </div>
   <div class = "make_chat_button">
     <a href = "#">チャットを作成する</a>
