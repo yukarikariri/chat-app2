@@ -57,16 +57,96 @@
   background-color: #ffffff;
   height: 100px;
   padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+  .chatroom_name{
+    font-size: 24px;
+    color: #333;
+  }
+
+  .exit_button a{
+    color: darkred;
+    padding: 20px;
+    border: 1px solid darkred;
+    text-align: center;
+    text-decoration: none;
+  }
 
 .second_chat_area{
   background-color: #FAFAFA;
   height: calc(100vh - 100px - 90px);
   padding: 46px 40px 0 40px;
+  overflow: scroll;
+}
+
+.top_message{
+  display: flex;
+}
+
+.chat_name{
+  font-size: 16px;
+  color: #434A54;
+  padding: 10px 10px 10px 0px;
+}
+
+.chat_timestamp{
+  font-size: 12px;
+  color: #999;
+  padding-top: 10px;
+}
+
+.chat_contet{
+  font-size: 14px;
+  color: #434A54;
+  padding-bottom: 40px;
 }
 
 .third_chat_area{
   background-color: #DDDDDD;
   height: 90px;
   padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.message{
+  background-color: white;
+  width: 100%;
+  margin-right: 15px;
+  display: flex;
+}
+
+.message_box{
+  padding-left: 10px;
+  background-color: white;
+  height: 50px;
+  border: none;
+  width: 100%;
+}
+
+.submit_button{
+  background-color: #38aef0;
+  border: none;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  height: 50px;
+  padding: 0 20px;
+}
+
+.form_image{
+  font-size: 12px;
+  background-color: lightblue;
+  color: white;
+  padding: 12px;
+  width: 60px;
+  margin: 5px 10px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
 }
