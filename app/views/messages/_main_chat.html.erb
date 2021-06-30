@@ -7,18 +7,7 @@
 </div>
 
 <div class = "second_chat_area">
-  <div class = "top_message">
-    <div class = "chat_name">Tom</div>
-    <div class = "chat_timestamp">2020/03/31(Wed) 12:34:00</div>
-  </div>
-  <div class = "chat_contet">おはよう</div>
-
-  <div class = "top_message">
-    <div class = "chat_name">Sim</div>
-    <div class = "chat_timestamp">2020/03/31(Wed) 12:34:00</div>
-  </div>
-  <div class = "chat_contet">Hello</div>
-
+  <%= render partial: "message", collection: @messages %>
 </div>
 
 <%= form_with model: [@room, @message], class: "third_chat_area", local: true do |form| %>
