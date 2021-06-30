@@ -21,15 +21,13 @@
 
 </div>
 
-<div class = "third_chat_area">
+<%= form_with model: [@room, @message], class: "third_chat_area", local: true do |form| %>
   <div class = "message">
-    <input type = "text" placeholder = "type a message" class = "message_box">
+    <%= form.text_field :content, class: "message_box", placeholder: "type a message" %>
     <label class = "form_image">
-        <span class = "image_file">画像</span>
-        <input type = "file" class = "hidden">
+      <span class = "image_file">画像</span>
+      <%= form.file_field :image, class: "hidden" %>
     </label>
   </div>
-  <div class = "button">
-   <input type = "submit" value = "送信" class = "submit_button">
-  </div>
-</div>
+  <%= form.submit "送信", class: "submit_button" %>
+<% end %>
